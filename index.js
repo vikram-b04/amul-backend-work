@@ -39,8 +39,8 @@ app.post('/create-checkout-session', async (req, res) => {
             payment_method_types: ['card'],
             line_items: LineItem,
             mode: 'payment',
-            success_url: 'http://localhost:10000/success',
-            cancel_url: 'http://localhost:10000/cancel',
+            success_url: 'https://amul-backend-work.onrender.com/success',
+            cancel_url: 'https://amul-backend-work.onrender.com/cancel',
         });
 
         res.json({ id: session.id });
